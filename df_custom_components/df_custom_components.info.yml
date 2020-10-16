@@ -1,0 +1,8 @@
+name: DF Custom Components
+type: theme
+description: A base theme of Site Studio that is just a way to add custom components.
+core_version_requirement: ^8.8.0 || ^9
+
+# Defines the base theme.
+base theme: cohesion_theme
+cohesion: true

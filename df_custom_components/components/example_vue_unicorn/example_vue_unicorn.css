@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass");
+.st0, .st2, .st3, .st5, .st6 {
+  stroke: #000000;
+  stroke - miterlimit: 10;
+}
+
+.st4 {
+  stroke: #A5A5A5;
+  stroke - miterlimit: 10;
+}
+
+#example_vue_unicorn {
+  display: flex;
+  width: 100 %;
+  font - family: 'Overpass';
+  line - height: 1.5;
+}
+
+.section, .section--unicorn, .section--settings {
+  flex: 1;
+  height: 60vh;
+  display: flex;
+  align - items: center;
+  justify - content: center;
+  padding: 0 2em;
+}
+
+.section--unicorn {
+  text - align: center;
+}
+
+.section--settings {
+  background: #AAAAAA;
+  color: white;
+}
+
+.vuenicorn: hover {
+  animation: shake - shake 1s 3 ease -in -out;
+}
+
+label, input {
+  width: 100 %;
+  margin - bottom: 1em;
+}
+
+h2 {
+  font - size: 2em;
+}
+
+.settings - container {
+  max - width: 400px;
+  margin: 1em auto;
+}
+
+@keyframes shake - shake {
+  10 % {
+    transform: rotate(10deg);
+  }
+  30 % {
+    transform: rotate(-30deg);
+  }
+  50 % {
+    transform: rotate(10deg);
+  }
+  70 % {
+    transform: rotate(-20deg);
+  }
+  90 % {
+    transform: rotate(10deg);
+  }
+  100 % {
+    transform: rotate(0deg);
+  }
+}

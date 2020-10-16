@@ -1,0 +1,6 @@
+name: Example Pure Javascript Open
+description: 'Example using Pure Javascript.'
+js:
+  example_js_open.js: {}
+css:
+  example_js_open.css: {}
