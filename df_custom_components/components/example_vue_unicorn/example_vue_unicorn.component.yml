@@ -1,0 +1,8 @@
+name: Example Vue Unicorn
+description: 'Example using Vue, the Progressive JavaScript Framework.'
+js:
+  example_vue_unicorn.js: {attributes: { type: 'text/babel' }}
+  //cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js: { type: external, minified: true, crossorigin: anonymous }
+  //unpkg.com/babel-standalone@6/babel.min.js: { type: external, minified: true, crossorigin: anonymous }
+css:
+  example_vue_unicorn.css: {}

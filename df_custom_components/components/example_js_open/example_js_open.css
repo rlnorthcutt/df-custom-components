@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+.open_wrapper {
+  margin: 0px;
+  background: #00061c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#example_js_open {
+  --text-color: #f00;
+  --border-color: #3da7f8;
+  --animation-time: 1s;
+  --text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px var(--text-color),
+    0 0 10px var(--text-color), 0 0 10px var(--text-color),
+    0 0 10px var(--text-color), 0 0 10px var(--text-color),
+    0 0 20px var(--text-color), 0 0 30px var(--text-color),
+    0 0 40px var(--text-color), 0 0 55px var(--text-color),
+    0 0 75px var(--text-color);
+  --box-shadow: inset 0 0 50px var(--border-color), 0 0 10px var(--border-color),
+    0 0 20px var(--border-color), 0 0 30px var(--border-color);
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.33);
+  border-radius: 20px;
+  padding: 14px 24px;
+  transform: rotate(-6deg);
+  animation: turnOnBorder 0.24s forwards step-end,
+    flickerBorder calc(var(--animation-time) * 16) infinite step-end 1s;
+}
+
+p {
+  font-family: Roboto;
+  margin: 0px;
+  color: #fff;
+}
+
+span {
+  font-size: 100px;
+}
+
+p span {
+  opacity: 0.33;
+  animation: turnOn forwards step-end;
+}
+
+p span:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+p span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+p span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+p span:nth-child(4) {
+  animation: turnOn 0.27s forwards step-end,
+    flicker var(--animation-time) infinite step-end 1s;
+}
+
+@keyframes turnOnBorder {
+  100% {
+    border: 3px solid #fff;
+    box-shadow: var(--box-shadow);
+    opacity: 1;
+  }
+}
+
+@keyframes turnOn {
+  100% {
+    text-shadow: var(--text-shadow);
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    text-shadow: var(--text-shadow);
+  }
+  99% {
+    text-shadow: none;
+  }
+}
+
+@keyframes flickerBorder {
+  0% {
+    box-shadow: var(--box-shadow);
+  }
+  99% {
+    box-shadow: none;
+  }
+}
