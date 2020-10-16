@@ -11,6 +11,6 @@ This relies on the [Component module](https://www.drupal.org/project/component) 
 4. Enable the "DF Custom Components" theme. *DO NOT make it the default theme.*
 5. Your components will now be available as blocks in the system.
 
-![ACSF Custom Theme](www.testimg.com)
+![ACSF Custom Theme](//github.com/rlnorthcutt/df-custom-components/raw/main/acsf-custom-theme.png)
 
 
